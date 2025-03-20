@@ -31,4 +31,4 @@ The files and their content:
 - 'A_OTF_MMD.py', and 'A_OTF_W2' are the A_OTF algorithms using $\rho_{MMD}$ and $\rho_{W_2}$ distance function, respectively.
 - 'select_maps_fun.py' is the function used to apply the K-Medoids algorithm to select K maps.
 
-If you wish to run the code directly, you can run 'main.py' with the saved data as '.npz' files. 
+If you wish to run the code directly, you can run 'main.py' with the saved '.npz' data files. 
