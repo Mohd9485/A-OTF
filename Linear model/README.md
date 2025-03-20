@@ -1,3 +1,5 @@
+This folder corresponds to the Linear dynamics with linear observation example in the paper.
+
 The files and their content:
 - 'main_save_param.py': Train the OTF maps and save their parameters using the 'OTF_save_param.py' function.
 - 'distance_matrix.py': Generate the distance matrix D according to the desired distance function $d_{T},d_{W_2}$, and $d_{MMD}$ 
