@@ -17,7 +17,7 @@ for $t=1,2,\dots$ where $X_t\in \mathbb{R}^2,~ Y_t \in \mathbb{R},~ V_t$ and $W_
 
 $$
 \begin{aligned}
-    h(X_t)=X_t(1),
+    h(X_t)=X_t(1)^2,
 \end{aligned}
 $$
 
@@ -27,6 +27,7 @@ The files and their content:
 - 'main_save_param.py': Train the OTF maps and save their parameters using the 'OTF_save_param.py' function.
 - 'distance_matrix.py': Generate the distance matrix D according to the desired distance function $d_{T},d_{W_2}$, and $d_{MMD}$ 
 - 'main.py': Run the code using the distance matrix D and generate the final figures.
+- 'main_different_methods.py': Using different desired distance function $d_{T},d_{W_2}$, and $d_{MMD}$ method in line $135$ to produce Figure 3. 
 - 'KF.py', 'EnKF.py', 'SIR.py', and 'OTF.py' are the Kalman filter, ensemble Kalman filter, sequential import resampling particle filter, and optimal transport filtering, respectively.
 - 'A_OTF_MMD.py', and 'A_OTF_W2' are the A_OTF algorithms using $\rho_{MMD}$ and $\rho_{W_2}$ distance function, respectively.
 - 'select_maps_fun.py' is the function used to apply the K-Medoids algorithm to select K maps.
