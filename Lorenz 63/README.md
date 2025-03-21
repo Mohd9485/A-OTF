@@ -1,27 +1,24 @@
-This folder corresponds to the Linear dynamics with linear observation example in the paper.
-Consider
+This folder corresponds to the Lorenz 63 example in the paper.
 
 $$
 \begin{aligned}
-        X_{t} &= \begin{bmatrix}
-        \alpha & \sqrt{1-\alpha^2}
-        \\
-        -\sqrt{1-\alpha^2} & \alpha
-    \end{bmatrix}
-    X_{t-1} + \sigma V_t\\
-    Y_t &= h(X_t) + \sigma W_t
+\begin{bmatrix}
+    \dot{X}(1) \\ 
+    \dot{X}(2) \\
+    \dot{X}(3)
+\end{bmatrix}
+&= 
+\begin{bmatrix}
+    \sigma (X(2) - X(1)) \\
+    X(1) (\gamma - X(3)) - X(2) \\
+    X(1)X(2) - \beta X(3)   
+\end{bmatrix},\quad X_0 \sim \mathcal{N}(\mu_0,\sigma_0^2I_3),
+\\
+Y_t &= X_t(1) + \sigma_{obs}W_t,
 \end{aligned}
 $$
 
-for $t=1,2,\dots$ where $X_t\in \mathbb{R}^2,~ Y_t \in \mathbb{R},~ V_t$ and $W_t$ are i.i.d sequences of $2$-dimensional and one-dimensional standard Gaussian random variables, $\alpha=0.9$ and $\sigma^2=0.1$. Two observation functions are of interest:
-
-$$
-\begin{aligned}
-    h(X_t)=X_t(1)^2,
-\end{aligned}
-$$
-
-where $X_t(1)$ is the first component of the vector $X_t$. We refer to these observation models as linear and quadratic, respectively.
+where $[X(1),X(2),X(3)]^\top$ are the variables representing the hidden states of the system, and $\sigma$, $\gamma$, and $\beta$ are the model parameters. We choose $\sigma=10$, $\gamma=28$, $\beta=8/3$, $\mu_0 = [0,0,0]^\top$, and $\sigma_{0}^2=10$. The observed noise $W$ is a $1$-dimensional standard Gaussian random variable with $\sigma_{obs}^2=10.$
 
 The files and their content:
 - 'main_save_param.py': Train the OTF maps and save their parameters using the 'OTF_save_param.py' function.
