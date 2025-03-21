@@ -21,7 +21,7 @@ $$
 \end{aligned}
 $$
 
-where $X_t(1)$ is the first component of the vector $X_t$. We refer to these observation models as linear and quadratic, respectively.
+where $X_t(1)$ is the first component of the vector $X_t$.
 
 The files and their content:
 - 'main_save_param.py': Train the OTF maps and save their parameters using the 'OTF_save_param.py' function.
