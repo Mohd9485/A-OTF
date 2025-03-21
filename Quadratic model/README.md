@@ -1,4 +1,4 @@
-This folder corresponds to the Linear dynamics with linear observation example in the paper.
+This folder corresponds to the Linear dynamics with quadratic observation example in the paper.
 Consider
 
 $$
