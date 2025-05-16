@@ -25,3 +25,5 @@ The files and their content:
 - 'select_maps_fun.py' is the function used to apply the K-Medoids algorithm to select K maps.
 
 If you wish to run the code directly, you can run 'main.py' with the saved '.npz' data files. 
+To reproduce left panel in Figure 2, run 'main.py' and for the right panel, run 'main_compute_time.py'  
+
