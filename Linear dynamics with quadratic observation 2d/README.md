@@ -9,19 +9,11 @@ $$
         -\sqrt{1-\alpha^2} & \alpha
     \end{bmatrix}
     X_{t-1} + \sigma V_t\\
-    Y_t &= h(X_t) + \sigma W_t
+    Y_t &= X_t(1)^2 + \sigma W_t
 \end{aligned}
 $$
 
-for $t=1,2,\dots$ where $X_t\in \mathbb{R}^2,~ Y_t \in \mathbb{R},~ V_t$ and $W_t$ are i.i.d sequences of $2$-dimensional and one-dimensional standard Gaussian random variables, $\alpha=0.9$ and $\sigma^2=0.01$. Two observation functions are of interest:
-
-$$
-\begin{aligned}
-    h(X_t)=X_t(1)^2,
-\end{aligned}
-$$
-
-where $X_t(1)$ is the first component of the vector $X_t$.
+for $t=1,2,\dots$ where $X_t\in \mathbb{R}^2,~ Y_t \in \mathbb{R}^2,~ V_t$ and $W_t$ are i.i.d sequences of $2$-dimensional and one-dimensional standard Gaussian random variables, $\alpha=0.9$ and $\sigma^2=0.01$. 
 
 The files and their content:
 - 'main_save_param.py': Train the OTF maps and save their parameters using the 'OTF_save_param.py' function.
