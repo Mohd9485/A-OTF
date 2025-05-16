@@ -9,7 +9,7 @@ $$
         -\sqrt{1-\alpha^2} & \alpha
     \end{bmatrix}
     X_{t-1} + \sigma V_t\\
-    Y_t &= X_t(1)^2 + \sigma W_t
+    Y_t &= X_t^2 + \sigma W_t
 \end{aligned}
 $$
 
