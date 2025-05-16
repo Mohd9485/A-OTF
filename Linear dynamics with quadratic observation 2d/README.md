@@ -13,7 +13,7 @@ $$
 \end{aligned}
 $$
 
-for $t=1,2,\dots$ where $X_t\in \mathbb{R}^2,~ Y_t \in \mathbb{R}^2,~ V_t$ and $W_t$ are i.i.d sequences of $2$-dimensional and one-dimensional standard Gaussian random variables, $\alpha=0.9$ and $\sigma^2=0.01$. 
+for $t=1,2,\dots$ where $X_t\in \mathbb{R}^2,~ Y_t \in \mathbb{R}^2,~ V_t$ and $W_t$ are i.i.d sequences of $2$-dimensional standard Gaussian random variables, $\alpha=0.9$ and $\sigma^2=0.01$. 
 
 The files and their content:
 - 'main_save_param.py': Train the OTF maps and save their parameters using the 'OTF_save_param.py' function.
