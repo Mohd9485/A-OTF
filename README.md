@@ -2,4 +2,10 @@
 
 This repository is by [Mohammad Al-Jarrah](https://sites.google.com/view/mohammadaljarrah), [Bamdad Hosseini](https://bamdadhosseini.org/), [Amirhossein Taghvaei](https://amirtag.github.io) and contains the Pytorch source code to reproduce the experiments in our 2025 paper [Fast filtering of non-Gaussian models using Amortized Optimal Transport Maps](https://arxiv.org/abs/2503.12633). 
 
+## Setup
+* Python/Numpy
+* PyTorch
+* Scipy
+* [Python Optimal Transport (POT)](https://pythonot.github.io) 
+
 
